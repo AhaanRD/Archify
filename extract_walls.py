@@ -7,8 +7,8 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny(gray, 50, 150)
 
 # Hough transform to detect lines
-lines = cv2.HoughLinesP(edges, 1, math.pi / 180, threshold=150,
-                        minLineLength=0, maxLineGap=80)
+lines = cv2.HoughLinesP(edges, 1, math.pi / 180, threshold=100,
+                        minLineLength=10, maxLineGap=10)
 
 
 walls = []
