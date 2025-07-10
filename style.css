@@ -1,0 +1,33 @@
+body.landing {
+  margin: 0;
+  font-family: 'Century Gothic', 'css';
+  background: linear-gradient(to bottom, #e0eafc, #78aefa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-box {
+  text-align: center;
+  background: white;
+  padding: 400px 600px;
+  font-size: 200px;  
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.center-box button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 120px;
+  border: none;
+  background-color: #004F90;
+  color: rgb(255, 255, 255);
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.center-box button:hover {
+  background-color: #003d70;
+}

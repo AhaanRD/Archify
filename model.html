@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Archify : Render</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    canvas {
+      display: block;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      background-color: #004F90;
+      color: white;
+      border: none;
+      padding: 100px 160px;
+      font-size: 120px;
+      border-radius: 60px;
+      cursor: pointer;
+    }
+    .back-button:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="back-button" onclick="window.location.href='landing_page.html'">← Return</button>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
