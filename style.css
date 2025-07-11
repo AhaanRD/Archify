@@ -1,7 +1,7 @@
 body.landing {
   margin: 0;
   font-family: 'Century Gothic', 'css';
-  background: linear-gradient(to bottom, #e0eafc, #78aefa);
+  background: linear-gradient(to bottom,#2980B9,#6DD5FA,#FFFFFF);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,21 +13,24 @@ body.landing {
   background: white;
   padding: 400px 600px;
   font-size: 200px;  
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 120px;
+  box-shadow: 30px 30px 40px 10px rgba(0,0,0,0.1);
 }
 
 .center-box button {
   margin-top: 20px;
-  padding: 12px 24px;
+  padding: 75px 100px;
   font-size: 120px;
   border: none;
-  background-color: #004F90;
+  background-color: #2680ca;
   color: rgb(255, 255, 255);
-  border-radius: 60px;
+  border-radius: 120px;
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.center-box button:hover {
+.center-box button:hover{
   background-color: #003d70;
 }

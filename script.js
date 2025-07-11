@@ -54,7 +54,7 @@ fetch("walls.json")
       const wallLength = Math.hypot(dx, dy);
       const angle = Math.atan2(dy, dx);
 
-      const geometry = new THREE.BoxGeometry(wallLength, 50, 10);
+      const geometry = new THREE.BoxGeometry(wallLength, 50, 5);
       const material = new THREE.MeshLambertMaterial({ color: 0x5555ff });
       const wall = new THREE.Mesh(geometry, material);
 
