@@ -13,9 +13,9 @@ document.body.appendChild(renderer.domElement);
 const img = document.createElement("img");
 img.src = "floorplan.jpeg"; 
 img.style.position = "absolute";
-img.style.top = "100px";
-img.style.right = "100px";
-img.style.width = "1500px";
+img.style.top = "10px";
+img.style.right = "10px";
+img.style.width = "35wwwww0px";
 img.style.border = "1px solid #ccc";
 img.style.boxShadow = "0 0 10px rgba(0,0,0,0.2)";
 img.style.zIndex = "10";
@@ -32,7 +32,7 @@ light.position.set(100, 200, 100);
 scene.add(light);
 
 // HELPER GRID
-const grid = new THREE.GridHelper(1000, 20);
+const grid = new THREE.GridHelper(800, 20);
 scene.add(grid);
 
 // LOAD WALLS
@@ -67,27 +67,26 @@ fetch("walls.json")
     });
   });
 
-// Keyboard movement (basic WASD)
+// Keyboard movement using arrow keys
 document.addEventListener('keydown', (event) => {
-  const speed = 10;
   switch (event.key) {
     case 'w':
-      camera.position.z -= speed;
+      camera.position.z -= 10;
       break;
     case 's':
-      camera.position.z += speed;
+      camera.position.z += 10;
       break;
     case 'a':
-      camera.position.x -= speed;
+      camera.position.x -= 10;
       break;
     case 'd':
-      camera.position.x += speed;
+      camera.position.x += 10;
       break;
     case 'q':
-      camera.position.y += speed;
+      camera.position.y += 10;
       break;
     case 'e':
-      camera.position.y -= speed;
+      camera.position.y -= 10;
       break;
   }
 });
